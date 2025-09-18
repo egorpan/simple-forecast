@@ -1,7 +1,7 @@
 import requests
 
 CITY_NAME = "Tashkent"
-API = "59a3955521c146fa9e9132721251709"
+API = "your API from https://www.weatherapi.com/"
 URL = f"http://api.weatherapi.com/v1/current.json?key={API}&q={CITY_NAME}"
 
 print(requests.get(URL).json()['current']['temp_c'])
